@@ -16,7 +16,9 @@ using RazorPagesMovie.Data;
 
 namespace RazorPagesMovie
 {
-    public class Startup
+
+ 
+public class Startup
     {
 
 
@@ -56,6 +58,7 @@ namespace RazorPagesMovie
             app.UseRouting();
 
             app.UseAuthorization();
+            app.UseRequestLocalization("en-US"); //support for locale en us
 
             app.UseEndpoints(endpoints =>
             {
